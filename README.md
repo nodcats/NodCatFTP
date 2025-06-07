@@ -12,20 +12,6 @@
 - 系统托盘运行
 - 跨平台支持(Linux/Windows)
 
-## 安装指南
-
-### Linux (DEB 包)
-
-1. 下载最新版本的 DEB 包
-2. 使用以下命令安装:
-   ```bash
-   sudo dpkg -i nodcat.deb
-   ```
-3. 如果缺少依赖，运行:
-   ```bash
-   sudo apt-get install -f
-   ```
-
 ### Windows (EXE)
 
 1. 下载最新版本的 EXE 安装包
@@ -62,6 +48,24 @@ python setup_windows_exe.py
 5. 使用"定时设置"配置自动同步
 
 程序会最小化到系统托盘，右键托盘图标可打开主界面或退出程序。
+
+## 软件截图
+
+### 主界面
+
+![主界面](md/img/1.jpg)
+
+### FTP 设置
+
+![FTP 设置](md/img/2.jpg)
+
+### 快捷菜单
+
+![快捷菜单](md/img/3.jpg)
+
+### 定时设置
+
+![定时设置](md/img/4.jpg)
 
 ## 配置说明
 
