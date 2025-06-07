@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    configure)
+        # 为所有用户创建可写配置目录
+        for USER_HOME in /home/*; do
+            [ -d "$USER_HOME" ] || continue
+            mkdir -p "$USER_HOME/.config/nodcat"
+            chmod 755 "$USER_HOME/.config/nodcat"
+            
+            # 初始化默认配置（如果不存在）
+            if [ ! -f "$USER_HOME/.config/nodcat/config.json" ]; then
+                cp "/usr/share/nodcat/config.json.default" \
+                   "$USER_HOME/.config/nodcat/config.json"
+                chmod 644 "$USER_HOME/.config/nodcat/config.json"
+                chown -R "${USER_HOME##*/}:${USER_HOME##*/}" \
+                         "$USER_HOME/.config/nodcat"
+            fi
+        done
+        ;;
+esac
+
+exit 0

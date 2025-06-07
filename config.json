@@ -1,0 +1,13 @@
+{
+    "ftp": {
+        "host": "",
+        "username": "",
+        "password": "",
+        "remote_path": ""
+    },
+    "local_path": "",
+    "schedule": {
+        "frequency": "\u6bcf\u5929",
+        "time": "00:00"
+    }
+}

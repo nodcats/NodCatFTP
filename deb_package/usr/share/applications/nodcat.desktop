@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=NodCat
+Exec=/usr/bin/nodcat --config ~/.config/nodcat/config.json
+Icon=nodcat
+Type=Application
+Categories=Utility;
+Terminal=false
